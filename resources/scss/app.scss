@@ -1,1 +1,143 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+header {
+    background-color: $light;
+
+    .navbar {
+        max-width: 1100px;
+        margin: auto;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 0;
+
+            .logo {
+                img {
+                    height: 100px;
+                }
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+
+                li {
+                    a {
+                        font-weight: 600;
+                        margin: 0 1rem;
+                        padding-bottom: 3.8rem;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: grey;
+
+                        &:hover {
+                            color: #0282f9;
+                            border-bottom: 5px solid $primary;
+                        }
+
+                        &.active {
+                            color: $primary;
+                            border-bottom: 5px solid $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+footer {
+    info-box {
+        background-image: url('../../assets/img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            color: rgb(191, 189, 189);
+            display: flex;
+            justify-content: space-between;
+
+            .details {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 2rem 0;
+
+                .col {
+                    width: calc((100% / 12) * 4);
+                    height: min-content;
+
+                    h4 {
+                        text-transform: uppercase;
+                        color: white;
+                    }
+
+                    ul {
+                        list-style: none;
+                        padding-top: 1rem;
+                        margin-bottom: 2rem;
+                        line-height: 1.5rem;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .logo {
+                height: 400px;
+                width: 600px;
+                background-image: url('../../assets/img/dc-logo-bg.png');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position-y: center;
+                background-position-x: left;
+            }
+        }
+    }
+
+    .footer-bottom {
+        background-color: #1C1C1C;
+
+        .container {
+            height: 100px;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .register {
+                span {
+                    display: inline-block;
+                    text-transform: uppercase;
+                    padding: 0.5rem 0.75rem;
+                    border: 4px solid #0282f9;
+
+                    &:hover {
+                        background-color: #0282f9;
+                    }
+                }
+            }
+
+            .social {
+                display: flex;
+                align-items: center;
+
+                span {
+                    margin-right: 2rem;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    color: #0282f9;
+                }
+
+                img {
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+}
