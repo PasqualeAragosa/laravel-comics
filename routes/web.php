@@ -22,7 +22,11 @@ Route::get('/collectibles', function () {
 })->name('collectibles');
 
 Route::get('/', function () {
-    return view('comics');
+    $comics = config('db.comics');
+    $data = [
+        'comics' => $comics
+    ];
+    return view('comics', $data);
 })->name('comics');
 
 Route::get('/fans', function () {

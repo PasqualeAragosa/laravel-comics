@@ -1,5 +1,13 @@
 @import '~bootstrap/scss/bootstrap';
-@import '~resources/scss/comics';
+@import '~resources/scss/partials/comics';
+@import '~resources/scss/partials/characters';
+@import '~resources/scss/partials/collectibles';
+@import '~resources/scss/partials/movies';
+@import '~resources/scss/partials/tv';
+@import '~resources/scss/partials/videos';
+@import '~resources/scss/partials/shop';
+@import '~resources/scss/partials/games';
+@import '~resources/scss/partials/news';
 
 header {
     background-color: #ffffff;
