@@ -35,9 +35,13 @@
                     <a href="/news" class="{{Route::currentRouteName() === 'news' ? 'active' : ''}}">news</a>
                 </li>
             </ul>
-            <!-- /.main-menu -->
+            <!-- /.ul -->
         </div>
         <!-- /.container -->
     </nav>
     <!-- /.navbar -->
+    <div class="jumbotron">
+        <img src="{{Vite::asset('resources/images/jumbotron.jpg')}}" alt="">
+    </div>
+    <!-- /.jumbotron -->
 </header>
